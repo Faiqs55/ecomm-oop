@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5% !important;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* NAVBAR  */
+
+header.main{
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   /* background-color: antiquewhite; */
+   position: fixed;
+   z-index: 100;
+}
+header.main nav{
+    width: 70%;
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+}
+header.main nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+}
+header.main nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+}
+header.main nav h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    color: white;
+}
+header.main nav h1 .sm{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+header.main nav h1 .lg{
+    font-family: "Playwrite PE", cursive;
+    font-size: 2rem;
+}
+
+header.main nav div{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    font-size: 2rem;
+    gap: 1.2em;
+}
+header.main nav div a{
+    color: white;
+}
+
+/* HERO SECTION  */
+
+main.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../admin/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2em;
+}
+
+main.hero .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+main.hero .title .sm{
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+}
+main.hero .title .lg{
+    font-family: "Wittgenstein", serif;
+    font-style: italic;
+    font-size: 5.5rem;
+    text-align: center;
+}
+main.hero p{
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+main.hero a{
+    font-size: 1.2rem;
+    border: 1.5px solid white;
+    padding: 1.5em 2.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 250ms ease-in;
+}
+main.hero a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+section.popular{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.popular h2{
+    font-family: "Wittgenstein", serif;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+section.popular .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+section.popular .card{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    align-items: center;
+    gap: 1rem;
+}
+section.popular .card .img{
+    width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+}
+section.popular .card img{
+    width: 100%;
+    height: auto;
+
+}
+
+section.popular .card .category{
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: #999;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+section.popular .card .title{
+    font-family: "Wittgenstein", serif;
+    letter-spacing: 1px;
+}
+section.popular .card .price{
+    font-size: 1.4rem;
+    color: #777;
+}
