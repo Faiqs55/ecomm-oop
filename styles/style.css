@@ -21,8 +21,9 @@ header.main{
    height: 10vh;
    display: flex;
    align-items: center;
-   /* background-color: antiquewhite; */
    position: fixed;
+   top: 0;
+   left: 0;
    z-index: 100;
 }
 header.main nav{
@@ -193,6 +194,14 @@ section.popular .card{
     width: 23%;
     align-items: center;
     gap: 1rem;
+    padding: 7px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+}
+section.popular .card:hover{
+    /* border: 1px solid black; */
+    border-radius: 5%;
+    transform: scale(1.10);
 }
 section.popular .card .img{
     width: 100%;
@@ -214,6 +223,7 @@ section.popular .card .category{
 section.popular .card .title{
     font-family: "Wittgenstein", serif;
     letter-spacing: 1px;
+    color: black;
 }
 section.popular .card .price{
     font-size: 1.4rem;
@@ -269,6 +279,170 @@ section.feature-cate .container .card a:hover{
     background-color: white;
     color: black;
 }
+
+main.hero-shop{
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../admin/img/shop.jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2em;
+}
+main.hero-shop h1{
+    font-size: 5rem;
+    font-family: "Wittgenstein", serif;
+    letter-spacing: 2px;
+}
+
+section.shop form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section.shop form select{
+    /* font-family: "Wittgenstein", serif; */
+    font-weight: bold;
+    color: #777;
+    padding: 5px 15px;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    
+}
+
+section.single{
+    height: 85vh;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+section.single div.content{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.single div.content div.des-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div.content .cat{
+    font-size: 1.5rem;
+}
+div.content .title{
+    font-family: "Wittgenstein", serif;
+    font-size: 2rem;
+}
+div.content .price{
+    font-size: 2.5rem;
+    color: #777;
+}
+div.content .t-des{
+    color: #777;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+div.variations{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div.variations .sizes, .colors{
+    display: flex;
+    gap: 10px;
+    font-size: 1.3rem;
+    color: #777;
+}
+div.variations .sizes span{
+    border: 1px solid #999;
+    padding: 10px 15px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+div.variations .colors span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.count{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.count .total{
+    font-size: 2rem;
+    color: #777;
+    font-weight: bold;
+}
+.count .controls{
+    display: flex;
+    gap: 20px;
+}
+.controls .quantity{
+    border: 1px solid #777;
+    border-radius: 5%;
+}
+.quantity button{
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.quantity span{
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+.controls .add{
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    border: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 5%;
+}
+section.single div.img{
+    width: 48%;
+    overflow: hidden;
+}
+section.single div img{
+    width: 100%;
+    
+}
+section.des{
+    width: 75%;
+    margin: 50px auto;
+}
+section.des h1{
+    font-size: 2rem;
+    font-family: "Wittgenstein", serif;
+    margin: 10px 0;
+}
+section.des p{
+    font-size: 1.4rem;
+    color: #777;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
 
 
 
