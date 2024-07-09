@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log(window.location.pathname);
     if(window.location.pathname == "/ecomm.oop/"){
         $(document).scroll(function(){
             $("header.main").css("background-color", "rgba(255, 255, 255, 0.781)");

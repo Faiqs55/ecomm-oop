@@ -50,4 +50,5 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis cumque. Voluptates ducimus itaque, provident voluptatibus officia maxime impedit animi vel repellat tempore, earum ratione voluptatem iure ullam molestiae dolores ab magni labore mollitia nisi. Repellat laudantium quas, quisquam officiis vitae placeat adipisci necessitatibus aspernatur pariatur, incidunt nesciunt, voluptates facere corporis culpa sed ex esse. Omnis amet ex voluptatibus unde laborum eum cupiditate, iste natus quisquam cumque perspiciatis quia nobis dignissimos obcaecati ipsa maxime corrupti, impedit eaque error accusantium sed, reiciendis labore ducimus inventore? Id provident perferendis ab maxime debitis, voluptatibus ipsum possimus iure hic, alias tenetur esse quia non!</p>
 </section>
 
+
 <?php include "./footer.php" ?>
