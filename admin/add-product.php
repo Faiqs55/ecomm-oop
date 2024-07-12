@@ -4,7 +4,6 @@
     <h1>Add New Post</h1>
     <form action="" class="add-p">
         <input type="text" placeholder="Add Title of Product">
-        <input type="text" placeholder="Add Title of Product">
         <textarea name="" id="" placeholder="Add Desciption of Product"></textarea>
         <h3>Select Sizes</h3>
         <div class="sizes">
@@ -29,7 +28,12 @@
                 <input type="checkbox">
             </div>
         </div>
-         <input type="text" placeholder="Add colors and seperate with ','">        
+         <input type="text" placeholder="Add colors and seperate with ','">   
+         <select name="" id="">
+             <option value="" selected disabled>Select Category</option>
+            <option value="">casual</option>
+            <option value="">Jackets</option>
+         </select>     
          <h3>Add an Image</h3>
          <input type="file">
          <button type="submit">Save</button>

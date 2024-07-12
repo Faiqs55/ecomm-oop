@@ -206,10 +206,15 @@ nav a{
     align-items: center;
     gap: 0.5rem;
 }
-input[type = "checkbox"]{
+.add-p input[type = "checkbox"]{
     cursor: pointer;
     height: 1.6rem;
     width: 1.6rem;
+}
+.add-p select{
+    font-size: 1.6rem;
+    padding: 10px;
+    cursor: pointer;
 }
 .add-p button{
     padding: 10px;
