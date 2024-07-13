@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/3fda0b5bca.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/3fda0b5bca.js" crossorigin="anonymous" defer></script>
     <title>Ecomm | HOME</title>
 </head>
 <body>

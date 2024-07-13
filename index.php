@@ -1,4 +1,5 @@
 <?php include "./header.php" ?>
+<?php include "./query/index.php" ?>
 
 
  <main class="hero">
@@ -23,38 +24,27 @@
      <h2>Most Popular</h2>
 
      <div class="container">
-        <div class="card">
+      <?php
+       $products = new db();
+       $products->getData("products", "*", "categories ON categories.c_id = products.p_category");
+       $res = $products->getRes();
+       if(count($res) > 0){
+         foreach($res as $data){
+      ?>
+        <a class="card" href="./single.php?id=<?php echo $data['p_id'] ?>">
         <div class="img">
-           <img src="./admin/img/kurti.jpg" alt="">
+           <img src="./admin/uploads/<?php echo $data['p_img'] ?>" alt="">
            </div>
-           <h3 class="category">CATEGORY</h3>
-           <h3 class="title">TITLE OF THE ITEM</h3>
-           <h3 class="price">$PRICE</h3>
-        </div>
-        <div class="card">
-        <div class="img">
-           <img src="./admin/img/hood.jpg" alt="">
-           </div>
-           <h3 class="category">CATEGORY</h3>
-           <h3 class="title">TITLE OF THE ITEM</h3>
-           <h3 class="price">$PRICE</h3>
-        </div>
-        <div class="card">
-        <div class="img">
-           <img src="./admin/img/sunglasses.jpg" alt="">
-           </div>
-           <h3 class="category">CATEGORY</h3>
-           <h3 class="title">TITLE OF THE ITEM</h3>
-           <h3 class="price">$PRICE</h3>
-        </div>
-        <div class="card">
-        <div class="img">
-           <img src="./admin/img/top.jpg" alt="">
-           </div>
-           <h3 class="category">CATEGORY</h3>
-           <h3 class="title">TITLE OF THE ITEM</h3>
-           <h3 class="price">$PRICE</h3>
-        </div>
+           <h3 class="category"><?php echo $data['c_name'] ?></h3>
+           <h3 class="title"><?php echo $data['p_title'] ?></h3>
+           <h3 class="price">$<?php echo $data['p_price'] ?></h3>
+         </a>
+        <?php
+         }
+       }else{
+         echo "<h1>NO PRODUCTS FOUND</h1>";
+       }
+        ?>
      </div>
 
  </section>
